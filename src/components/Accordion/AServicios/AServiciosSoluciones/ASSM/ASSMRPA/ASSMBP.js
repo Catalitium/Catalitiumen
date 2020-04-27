@@ -22,11 +22,11 @@ function MyVerticallyCenteredModal(props) {
           
           <h3 align="center"><img src={BPLogo} alt="AALogo" ></img></h3>
           <p>
-            Ayuda a organizaciones a automatizar las operaciones de la empresa de manera ágil y económica. Esta herramienta se basa principalmente en el lenguaje de programación Java y ofrece un diseño visual.
+          BluePrism helps organizations automate business operations quickly and cost-effectively. This tool is mainly based on the Java programming language and offers a visual design.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Cerrar</Button>
+          <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
@@ -38,7 +38,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button onClick={() => setModalShow(true)} variant="outline-info" className="text-info" >  
-          Ver mas
+         View More
         </Button>
   
         <MyVerticallyCenteredModal

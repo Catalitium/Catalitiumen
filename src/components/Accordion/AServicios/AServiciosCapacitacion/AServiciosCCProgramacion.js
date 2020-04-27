@@ -1,4 +1,5 @@
 import React from 'react'
+import {Row, Col} from "react-bootstrap";
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/Card'
 import JSLogo from '../../../../assets/img/JSLogo.png'
@@ -12,18 +13,18 @@ import ASSMPDB from './ASCM/ASCMProgramacion/ASSMPDB'
 export const AServiciosCProgramacion = () => {
     return (
         <div >
-                      
-  <CardDeck style={{display: 'flex', flexDirection: 'row'}}  className="card border-0">
-            <br></br>
-
-  <Card style={{ width: '20rem' }} >
+<br></br><br></br>
+<CardDeck className="card border-0">
+<Row className="justify-content-md-center" fluid>
+<Col sm>
+  <Card>
     <Card.Img variant="top" src={JSLogo} />
     <Card.Body>
       <Card.Title>JavaScript</Card.Title>
       <Card.Text>
-      Brindamos cursos para principiantes y expertos de JavaScript en donde 
-      transmitiremos las buenas practicas y las metodologias usadas para el efectivo desarrollo de Scripts usando JavaScript </Card.Text>
-    
+      We offer courses for beginners and experts in JavaScript where 
+      we will convey the good practices and methodologies used for effective script development using JavaScript
+      </Card.Text>
     </Card.Body>
     <Card.Footer>
 
@@ -32,9 +33,11 @@ export const AServiciosCProgramacion = () => {
 
     </Card.Footer>
   </Card>
+  </Col>
+  
+  <Col sm> 
 
-
-  <Card style={{ width: '20rem' }} >
+  <Card>
     <Card.Img variant="top" src={PythonLogo}  />
     <Card.Body>
 
@@ -49,8 +52,10 @@ export const AServiciosCProgramacion = () => {
 
     </Card.Footer>
   </Card>
-
-  <Card style={{ width: '20rem' }} >
+  </Col>
+  
+  <Col sm> 
+  <Card>
     <Card.Img variant="top" src={DBLogo}  />
     <Card.Body>
       <Card.Title>Base de Datos</Card.Title>
@@ -64,7 +69,8 @@ export const AServiciosCProgramacion = () => {
 
     </Card.Footer>
   </Card>
-
+  </Col>
+  </Row>
 </CardDeck>
 
         </div>

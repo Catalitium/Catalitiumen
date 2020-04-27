@@ -1,4 +1,5 @@
 import React from 'react'
+import {Row, Col} from "react-bootstrap";
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/Card'
 import AALogo from '../../../../assets/img/AALogo.png'
@@ -12,16 +13,18 @@ import ASCMUI from './ASCM/ASCMRPA/ASCMUi'
 export const AServiciosCRPA = () => {
     return (
         <div>
-  <CardDeck style={{display: 'flex', flexDirection: 'row'}}  className="card border-0">
-            <br></br>
-  <Card style={{ width: '20rem' }} >
+ <br></br><br></br>
+<CardDeck className="card border-0">
+<Row className="justify-content-md-center" fluid>
+<Col sm>
+  <Card>
     <Card.Img variant="top" src={AALogo} />
     <Card.Body>
       <br></br>
       <Card.Title>AA</Card.Title>
       <Card.Text>
-      Durante años hemos trabajado con multinacionales capacitando plantillas alrededor del mundo para optimizar su mano de obra usando Automation Anywhere. Ofrecemos cursos Introductorios y avanzados
-      para que su plantilla pueda desarrollar soluciones robustas una vez completado el curso
+      We have worked with multinationals to train their staff around the world to optimise their workforce using Automation Anywhere. We offer introductory and advanced courses
+      so that your staff can develop robust solutions after completing the course
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -30,13 +33,15 @@ export const AServiciosCRPA = () => {
 
     </Card.Footer>
   </Card>
+  </Col>
   
-  <Card style={{ width: '20rem' }} >
+  <Col sm> 
+  <Card>
     <Card.Img variant="top" src={BPLogo} />
     <Card.Body>
       <Card.Title>BluePrism</Card.Title>
       <Card.Text>
-      Contamos con recursos capaces de entrenar a su plantilla y posicionarlos como expertos para que tenga una ventaja competitiva con respecto a los otros departamentos de automatización
+      We can train your staff and positioning them as experts so that you have a competitive advantage over other automation departments
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -45,25 +50,24 @@ export const AServiciosCRPA = () => {
     
     </Card.Footer>
   </Card>
-  
-  <Card style={{ width: '20rem' }} >
+  </Col>
+
+  <Col sm> 
+  <Card>
     <Card.Img variant="top" src={UipathLogo}  />
     <Card.Body>
 
       <Card.Title>UiPath</Card.Title>
       <Card.Text>
-    
-      Inscribiendose en nuestro curso personalizado de Uipath será capaz de usar la herramienta mas usada en el mercado de RPA para construir sus propias soluciones sin depender de consultoras sobrevaloradas.
-      
+      Enrolling in our Uipath course will  enable you to use the most widely used tool in the RPA market to build your own solutions without relying on overpriced consultants.
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-
       <ASCMUI />
-
     </Card.Footer>
   </Card>
-
+  </Col>
+  </Row>
 </CardDeck>
         </div>
     )

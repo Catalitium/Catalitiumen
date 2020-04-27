@@ -15,7 +15,7 @@ function MyVerticallyCenteredModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter" align="center" >
-          <h4 align="center">MERN o MEAN</h4>
+          <h4 align="center">MERN or MEAN</h4>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -25,7 +25,7 @@ function MyVerticallyCenteredModal(props) {
           <CursosBasicos />
           </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Cerrar</Button>
+          <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
@@ -37,7 +37,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button onClick={() => setModalShow(true)} variant="outline-info" className="text-info" >  
-          Ver mas
+        View more
         </Button>
   
         <MyVerticallyCenteredModal

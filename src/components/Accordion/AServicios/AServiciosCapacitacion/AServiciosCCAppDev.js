@@ -1,4 +1,5 @@
 import React from 'react'
+import {Row, Col} from "react-bootstrap";
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/Card'
 import ReactLogo from '../../../../assets/img/ReactLogo.png'
@@ -12,18 +13,17 @@ import ASSMWebDevMERN from './ASCM/ASCMAppDev/ASSMMERN'
 
 export const AServiciosCAppDev = () => {
     return (
-        <div>
-
-          
-  <CardDeck style={{display: 'flex', flexDirection: 'row'}}  className="card border-0">
-            <br></br>
-
-  <Card style={{ width: '20rem' }} >
+<div>
+<br></br><br></br>
+<CardDeck className="card border-0">
+<Row className="justify-content-md-center" fluid>
+  <Col sm>
+  <Card>
     <Card.Img variant="top" src={AngularLogo} />
     <Card.Body>
       <Card.Title>Angular</Card.Title>
       <Card.Text>
-        Ofrecemos una inducción breve a Angular para que se familiarize con las buenas practicas para el diseño de front-end.
+      We offer a short induction to Angular to familiarize you with best practices for front-end design.
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -33,15 +33,17 @@ export const AServiciosCAppDev = () => {
 
     </Card.Footer>
   </Card>
+  </Col>
   
-  <Card style={{ width: '20rem' }} >
+  <Col sm> 
+
+  <Card>
     <Card.Img variant="top" src={ReactLogo}  />
     <Card.Body>
       <br></br>
       <Card.Title>React</Card.Title>
       <Card.Text>
-      Ofrecemos diferentes cursos de React, dependiendo de su preferencia. Podrá construir atractivas aplicaciones usando React.
-      </Card.Text>
+      We offer different React courses, depending on your preference. You will be able to build attractive applications using React. </Card.Text>
     </Card.Body>
     <Card.Footer>
   <ASSMWebDevReact />
@@ -49,15 +51,19 @@ export const AServiciosCAppDev = () => {
   </Card>
 
   
+  </Col>
+  
+  <Col sm> 
 
-  <Card style={{ width: '20rem' }} >
+  <Card>
     <Card.Img variant="top" src={MernLogo}  />
     <Card.Body>
 
       <Card.Title>MERN/MEAN</Card.Title>
       <Card.Text>
 
-      Curso esencial si desea desarrollar soluciones end-to-end. Sintetizado en este curso esta lo indispensable para construir soluciones solidas. 
+      Essential course if you want to become a full-stack developer or build end-to-end solutions. 
+      Synthesized in this course is the indispensable to build solid solutions. 
       
       </Card.Text>
     </Card.Body>
@@ -67,8 +73,8 @@ export const AServiciosCAppDev = () => {
 
     </Card.Footer>
   </Card>
-
-
+  </Col>
+  </Row>
 </CardDeck>
 
 

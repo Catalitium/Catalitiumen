@@ -20,12 +20,12 @@ function MyVerticallyCenteredModal(props) {
         <Modal.Body>
         <h3 align="center"><img src={DBLogo} alt="AALogo" ></img></h3>
         <h6 align="center" > <b> SQL - NoSQL - MongoDB  </b></h6>
-          <p>Las bases de datos relacionales (SQL) son las más utilizadas, existen una serie de desventajas, pues son de gran rigidez, impidiendo que se produzca un crecimiento constante de los archivos. 
-            En el caso de las NoSQL son quizás las alternativa más usadas en un futuro más cercano.
-          Todavía hay expertos que son reacios a usarlas, fundamentalmente porque no conocen todas las posibilidades que pueden ofrecer. </p>
+          <p>Relational databases (SQL) are the most used, there are a number of disadvantages, because they are very rigid, preventing a constant growth of the files. 
+            In the case of NoSQL they are perhaps the most used alternative in the near future.
+          There are still experts who are reluctant to use them, mainly because they don't know all the possibilities they can offer. </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Cerrar</Button>
+          <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
@@ -37,7 +37,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button onClick={() => setModalShow(true)} variant="outline-info" className="text-info" >  
-          Ver mas
+        View More
         </Button>
   
         <MyVerticallyCenteredModal

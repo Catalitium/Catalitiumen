@@ -1,4 +1,5 @@
 import React from 'react'
+import {Row, Col} from "react-bootstrap";
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/Card'
 import JSLogo from '../../../../assets/img/JSLogo.png'
@@ -11,61 +12,57 @@ import ASSMPPy from './ASSM/ASSMProgramacion/ASSMPPy'
 
 export const AServiciosCProgramacion = () => {
     return (
-        <div >
-
-        <CardDeck style={{display: 'flex', flexDirection: 'row'}}  className="card border-0">
-            <br></br>
-
-  <Card style={{ width: '20rem' }} >
+<div >
+<br></br><br></br>
+<CardDeck className="card border-0">
+<Row className="justify-content-md-center" fluid>
+<Col sm>
+<Card>
     <Card.Img variant="top" src={JSLogo} />
     <Card.Body>
       <Card.Title>JavaScript</Card.Title>
       <Card.Text>
-      Indispensable para el desarrollo de páginas web y aplicaciones web. La gran ventaja yace en la extensa comunidad, las librerias y frameworks construidos sobre este lenguaje.
+      Indispensable for the development of web pages and web applications. The great advantage lies in the extensive community, libraries and frameworks built on this language.
     </Card.Text>
     </Card.Body>
     <Card.Footer>
-
         <ASSMPJS/>
-
-
     </Card.Footer>
   </Card>
+</Col>
 
-
-  <Card style={{ width: '20rem' }} >
+<Col sm> 
+  <Card>
     <Card.Img variant="top" src={PythonLogo}  />
     <Card.Body>
-
       <Card.Title>Python</Card.Title>
       <Card.Text>
-      Guido van Rossum ideó el lenguaje Python a finales de los 80 y comenzó a implementarlo en diciembre de 1989. Lenguaje adelantado para el hardware de la época pero actualmente es el que mayor crece por su facilidad de entendimiento.                           
+      Guido van Rossum devised the Python language in the late 1980s and began implementing it in December 1989. It was an advanced language for the hardware of the time, but is currently the fastest growing language because of its ease of understanding.          
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-
-<ASSMPPy />
-
+        <ASSMPPy />
     </Card.Footer>
   </Card>
-
-  <Card style={{ width: '20rem' }} >
+</Col>
+  
+<Col sm> 
+  <Card>
     <Card.Img variant="top" src={DBLogo}  />
     <Card.Body>
-      <Card.Title>Base de Datos</Card.Title>
+      <Card.Title>Databases</Card.Title>
       <Card.Text>
-      Cuando una base de datos se gestiona de forma adecuada, se ve aumentada la eficacia de sus trabajos de manera más rápida y ágil, pues se simplifica la labor. 
-     </Card.Text>
+      When a database is properly managed, the efficiency of its work is increased in a faster and more agile way, because the work is simplified. 
+      </Card.Text>
     </Card.Body>
     <Card.Footer>
-
-<ASSMPDB />
-
+        <ASSMPDB />
     </Card.Footer>
   </Card>
-
+  </Col>
+  </Row>
 </CardDeck>
-        </div>
+</div>
     )
 }
 

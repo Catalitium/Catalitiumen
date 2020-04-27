@@ -1,10 +1,10 @@
 import React from 'react';
 import { Accordion, Card, Container } from 'react-bootstrap';
 import AServicios from './AServicios/AServicios'
-import AEspecialidades from './AEspecialidades/AEspecialidades'
+import Contacto from './AContacto/Contacto'
 import Button from 'react-bootstrap/Button'
 
-export const AccordionAbout = () => {
+export const AccordionA = () => {
   return (
 
     <div>
@@ -13,14 +13,14 @@ export const AccordionAbout = () => {
 <Accordion defaultActiveKey="1" >
 <Card>
     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-      Experiencia
+      Experience
     </Accordion.Toggle>
     <Accordion.Collapse eventKey="0" >   
       <Card.Body className='card-text text-seconday' >
         <div align="left" >    
-          Nuestra amplia trajectoria trabajando con clientes y emprendedores nos ha demostrado que todos se pueden beneficiar de las tecnologías disponibles, independientemente de su negocio.
-          Nuestro equipo de ingenieros, programadores y consultores han ayudado a multinacionales y pequeñas empresas en la mejora de sus operaciones,
-          implementando tecnología no invasiva y de fácil uso.
+          Our extensive experience working with clients and entrepreneurs, around the world, has shown us that everyone can benefit from the technologies available, regardless of their business.
+          Our team of engineers, programmers and consultants have helped multinationals and small businesses improve their operations,
+          implementing non-invasive, user-friendly technology.
          <br></br><br></br>  
         </div>     
       </Card.Body>
@@ -28,7 +28,7 @@ export const AccordionAbout = () => {
   </Card>
   <Card>
     <Accordion.Toggle align="center" as={Button} variant="link" eventKey="1">
-      Servicios
+      Services
     </Accordion.Toggle>
     <Accordion.Collapse eventKey="1">
       <Card.Body align="center"> <AServicios/>  </Card.Body>
@@ -37,10 +37,12 @@ export const AccordionAbout = () => {
 
   <Card>
     <Accordion.Toggle align="center" as={Button} variant="link" eventKey="2">
-      Especialidades
+      Contact
     </Accordion.Toggle>
     <Accordion.Collapse eventKey="2">
-      <Card.Body> <AEspecialidades /> </Card.Body>
+      <Card.Body> 
+        <Contacto />
+      </Card.Body>
     </Accordion.Collapse>
   </Card>
 </Accordion>
@@ -49,4 +51,4 @@ export const AccordionAbout = () => {
   )
 }
 
-export default AccordionAbout
+export default AccordionA;

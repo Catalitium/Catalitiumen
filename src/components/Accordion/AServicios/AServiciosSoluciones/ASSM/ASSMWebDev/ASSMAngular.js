@@ -21,12 +21,11 @@ function MyVerticallyCenteredModal(props) {
         
           
           <h3 align="center"><img src={AngularLogo} alt="AALogo" ></img></h3>
-          <p>
-          Angular está diseñado como un framework de JavaScript.
-          Mientras que los proyectos pequeños de JavaScript no requieren de dicho framework, las aplicaciones a escala empresarial desafían a los desarrolladores a hacer su código más limpio y verificar su calidad más a menudo.</p>
+          <p>Angular is designed as a JavaScript framework.
+          While small JavaScript projects don't require such a framework, enterprise-scale applications challenge developers to make their code cleaner and check its quality more often.</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Cerrar</Button>
+          <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
@@ -38,7 +37,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button onClick={() => setModalShow(true)} variant="outline-info" className="text-info" >  
-          Ver mas
+          View More
         </Button>
   
         <MyVerticallyCenteredModal

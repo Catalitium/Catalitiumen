@@ -26,7 +26,7 @@ function MyVerticallyCenteredModal(props) {
           
           </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Cerrar</Button>
+          <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
@@ -38,7 +38,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button onClick={() => setModalShow(true)} variant="outline-info" className="text-info" >  
-          Ver mas
+          View more
         </Button>
   
         <MyVerticallyCenteredModal

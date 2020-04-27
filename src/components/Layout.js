@@ -4,7 +4,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 
 export const Layout = (props) => (
 
-    <Jumbotron fluid style={{backgroundColor: '#eeeeee'}}>
+<Jumbotron fluid style={{backgroundColor: '#eeeeee'}}>
 <Container>
         <p>{props.children}</p>
 </Container>

@@ -20,11 +20,11 @@ function MyVerticallyCenteredModal(props) {
         <Modal.Body>
           <h3 align="center"><img src={AALogo} alt="AALogo" ></img></h3>
           <p align="center" >
-          Indiscutiblemente es la herramienta que mejor integra ML. Su nueva plataforma Cloud es la mas innovadora en el mercado. La mas fácil de aprender, ya que no necesitan de extensos conocimientos técnicos de programación, para efectivamente desarrollar e implementar soluciones a gran escala.
+          It is undoubtedly the tool that best integrates ML. Its new Cloud platform is the most innovative in the market. The easiest to learn, since they do not need extensive technical programming knowledge to effectively develop and implement solutions on a large scale.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Cerrar</Button>
+          <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
@@ -36,7 +36,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button onClick={() => setModalShow(true)} variant="outline-info" className="text-info" >  
-          Ver mas
+          View More
         </Button>
   
         <MyVerticallyCenteredModal

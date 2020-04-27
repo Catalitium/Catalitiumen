@@ -14,7 +14,7 @@ function MyVerticallyCenteredModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter" align="center" >
-          <h4 align="center">JavaScript</h4>
+          <h4 align="center">Python</h4>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -22,14 +22,14 @@ function MyVerticallyCenteredModal(props) {
           
           <h3 align="center"><img src={PythonLogo} alt="AALogo" ></img></h3>
           <p>
-          Apodado el lenguaje del futuro y el mejor para integrar A.I,  ML y NPLG.
-          Se enfoca en ser fácil de usar, entender y aprender, 
-          manteniendo una alta potencia en su desempeño.
-          El hardware de la época hizo difícil su uso y el proyecto no trascendió como se esperaba pero con las nuevas y mejores computadoras de hoy en dia lo convierten en el lenguaje favorito de muchos.
-         </p>
+          The language of the future and the best to integrate I.A., ML and NPLG.
+          It focuses on being easy to use, understand and learn, 
+          maintaining a high power output.
+          The hardware of the time made it difficult to use and the project did not transcend as expected but with the new and better computers of today make it the favorite language of many.
+          </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Cerrar</Button>
+          <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
@@ -41,7 +41,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button onClick={() => setModalShow(true)} variant="outline-info" className="text-info" >  
-          Ver mas
+        View More
         </Button>
   
         <MyVerticallyCenteredModal

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Row, Col} from "react-bootstrap";
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/Card'
 import ReactLogo from '../../../../assets/img/ReactLogo.png'
@@ -12,60 +13,59 @@ import ASSMWebDevMERN from './ASSM/ASSMWebDev/ASSMMERN'
 
 export const AServiciosCAppDev = () => {
     return (
-        <div>
-
-<CardDeck style={{display: 'flex', flexDirection: 'row'}}  className="card border-0">
-            <br></br>
-
-  <Card style={{ width: '20rem' }} >
+<div>
+<br></br><br></br>
+<CardDeck className="card border-0">
+<Row className="justify-content-md-center" fluid>
+  <Col sm>
+  <Card>
     <Card.Img variant="top" src={AngularLogo} />
     <Card.Body>
       <Card.Title>Angular</Card.Title>
       <Card.Text>
-        Potenciado por Google, Framework para desarrollar excelentes aplicaciones. 
+      Powered by Google, Framework for developing excellent applications. 
       </Card.Text>
     </Card.Body>
     <Card.Footer>
         <ASSMWebDevAngular/>
     </Card.Footer>
   </Card>
-  
-  <Card style={{ width: '20rem' }} >
+  </Col>
+ <Col sm>
+  <Card>
     <Card.Img variant="top" src={ReactLogo}  />
     <Card.Body>
       <br></br>
       <Card.Title>React</Card.Title>
       <Card.Text>
-      Creado por Facebook, es una librería fácil de usar para desarrollar applicaciones web y de escritorio.
-      </Card.Text>
+      Created by Facebook, it is an easy to use library for developing web and desktop applications.
+     </Card.Text>
     </Card.Body>
     <Card.Footer>
   <ASSMWebDevReact />
     </Card.Footer>
   </Card>
 
+  </Col>
   
+  <Col sm> 
 
-  <Card style={{ width: '20rem' }} >
+  <Card>
     <Card.Img variant="top" src={MernLogo}  />
     <Card.Body>
       <Card.Title>MERN/MEAN</Card.Title>
       <Card.Text>
-      MEAN o MERN es la tendencia actual para construir soluciones end-to-end. 
+      MEAN or MERN is the current trend to build end-to-end solutions. 
       </Card.Text>
     </Card.Body>
     <Card.Footer>
     <ASSMWebDevMERN />
     </Card.Footer>
   </Card>
-
-
+  </Col>
+  </Row>
 </CardDeck>
-
-  
-
-
-        </div>
+</div>
     )
 }
 

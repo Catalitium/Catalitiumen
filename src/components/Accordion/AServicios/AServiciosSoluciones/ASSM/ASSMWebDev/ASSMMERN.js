@@ -21,11 +21,10 @@ function MyVerticallyCenteredModal(props) {
         
           
           <h3 align="center"><img src={MERNLogo} alt="AALogo" ></img></h3>
-     Es el acrónimo para <b>M</b>ongoDb, <b>E</b>xpress.js <b>R</b>eact o <b>A</b>ngular y <b>N</b>ode.js
-     <p> Estos componentes proporcionan un framework integral para producir soluciones end-to-end.</p>
-          </Modal.Body>
+          It is the acronym for <b>M</b>ongoDb, <b>E</b>xpress.js <b>R</b>eact or <b>A</b> angular and <b>N</b>ode.js
+     <p>These components provide a comprehensive framework for producing end-to-end solutions.</p> </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Cerrar</Button>
+          <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
@@ -37,7 +36,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button onClick={() => setModalShow(true)} variant="outline-info" className="text-info" >  
-          Ver mas
+          View More
         </Button>
   
         <MyVerticallyCenteredModal

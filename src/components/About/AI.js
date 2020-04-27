@@ -6,11 +6,11 @@ const AI = props => {
     return (
         <div className='card-body'>
             <h5 align="center"><img src={AILogo} alt="AI-logo" width={65} height={60} ></img></h5>
-            <h4 align="center" className="card-title"> AI
+            <h4 align="center" className="card-title"> Artificial Intelligence
             <br></br>
             <br></br>
                 <p align="center" className='card-text text-seconday'>
-                Para alcanzar máximo potencial, integramos Data Science, ML y NPLG
+                Innovate you enterprise integrating Data Analitics with ML y NPLG.
                 </p>
             </h4>
         </div>

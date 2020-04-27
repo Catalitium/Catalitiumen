@@ -22,14 +22,14 @@ function MyVerticallyCenteredModal(props) {
           
           <h3 align="center"><img src={JSLogo} alt="AALogo" ></img></h3>
           <p>
-              Indiscutiblemente el lenguaje del internet es el mas usado y conocido,
-              esencial para cualquier desarrollo web,
-              se integra muy bien con herramientas de RPA para la automatización de procesos y 
-              su naturaleza multiparadígmica permiten a desarrolladores de diferentes perfiles sintetizar soluciones robustas.
+              Undoubtedly the language of the Internet is the most used and known,
+              essential for any web development,
+              integrates very well with RPA tools for process automation and 
+              Its multi-paradigmic nature allows developers of different profiles to synthesize robust solutions.
           </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Cerrar</Button>
+          <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
@@ -41,7 +41,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button onClick={() => setModalShow(true)} variant="outline-info" className="text-info" >  
-          Ver mas
+          View More
         </Button>
   
         <MyVerticallyCenteredModal

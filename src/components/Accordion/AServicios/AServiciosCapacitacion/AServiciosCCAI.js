@@ -1,4 +1,5 @@
 import React from 'react'
+import {Row, Col} from "react-bootstrap";
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/Card'
 import TFLogo from '../../../../assets/img/TFLogo.png'
@@ -15,54 +16,58 @@ export const AServiciosCAI = () => {
     return (
 
 <div >
-
-  <CardDeck style={{display: 'flex', flexDirection: 'row'}}  className="card border-0">
-            <br></br>
-  <Card style={{ width: '20rem' }}  >
+<br></br><br></br>
+<CardDeck className="card border-0">
+<Row className="justify-content-md-center" fluid>
+  <Col sm>
+  <Card>
     <Card.Img variant="top" src={PythonLogo} fluid  />
     <Card.Body>
       <Card.Title>Python</Card.Title>
       <Card.Text>
-      Nuestros servicios de capacitación de Python son personalizados dependiendo del nivel de conocimiento de su plantilla.
-      Desde cursos introductorios para programar con Python hasta niveles expertos. Integramos las librerias mas populares depoendiendo de su necesidad y requerimiento                              
+      Our Python training services are customized depending on the level of knowledge of your staff.
+     From  Python introductory courses to expert levels. We can integrate the most popular libraries depending on your needs and requirements.                          
       </Card.Text>
     </Card.Body>
     <Card.Footer>
       <ASCMPyAI/>
     </Card.Footer>
   </Card>
-
-  <Card style={{ width: '20rem' }}  >
+  </Col>
+  
+  <Col sm> 
+  <Card>
     <Card.Img variant="top" src={TFLogo} fluid />
     <Card.Body>
     <br></br>
       <Card.Title>TensorFlow</Card.Title>
       <br></br><br></br>
       <Card.Text>
-      Nuestro curso de TensorFlow te daran los cimientos para evolucionar su capacidad analitica y adentrarse en el mundo de Deep Learning.
-      Despues de nuestra capacitación podrá elaborar modelos unicos adecuados a su negocio para optimizar la trata de datos
-      </ Card.Text>
+      Our TensorFlow course will give you the foundation to evolve your analytical skills and enter the world of Deep Learning.
+      After our training you will be able to develop unique models suited to your business. </ Card.Text>
     </Card.Body>
     <Card.Footer>
       <ASCMAITF/>
     </Card.Footer>
   </Card>
-
-  <Card style={{ width: '20rem' }} >
+  </Col>
+  
+  <Col sm> 
+  <Card>
     <Card.Img variant="top" src={AWSLogo} fluid  />
     <Card.Body>
     <br></br>
       <Card.Title>AWS - Machine Learning </Card.Title>
       <br></br>
       <Card.Text>
-      AWS ofrece el conjunto más amplio y completo de herramientas para que su empresa cree soluciones de aprendizaje automático efectivas con mayor rapidez.
-     </Card.Text>
+      AWS offers the most comprehensive set of tools for your company to create effective self-learning solutions faster</Card.Text>
     </Card.Body>
     <Card.Footer>
         <ASCMAIAWS />
     </Card.Footer>
   </Card>
-
+  </Col>
+  </Row>
 </CardDeck>
 
 </div>

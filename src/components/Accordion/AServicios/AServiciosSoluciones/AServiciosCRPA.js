@@ -1,4 +1,5 @@
 import React from 'react'
+import {Row, Col} from "react-bootstrap";
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/Card'
 import AALogo from '../../../../assets/img/AALogo.png'
@@ -11,32 +12,32 @@ import ASSMRPAUi from './ASSM/ASSMRPA/ASSMUi'
 
 export const AServiciosCRPA = () => {
     return (
-        <div>
-  <CardDeck style={{display: 'flex', flexDirection: 'row'}}  className="card border-0">
-            <br></br>
-  <Card style={{ width: '20rem' }} >
+<div>
+<br></br><br></br>
+<CardDeck className="card border-0">
+<Row className="justify-content-md-center" fluid>
+<Col sm>
+  <Card>
     <Card.Img variant="top" src={AALogo} />
     <Card.Body>
-      <br></br>
       <Card.Title>AA</Card.Title>
       <Card.Text>
-     Líder del mercado americano de RPA y única plataforma Cloud. 
-      Posee las capacidades cognitivas más avanzadas para procesar datos semi-estructurados.
+      Leader in the RPA  market and unique with a Cloud platform. 
+      It has the most advanced cognitive capabilities to process semi-structured data.
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-
     <ASSMRPAAA/>
-
     </Card.Footer>
   </Card>
-  
-  <Card style={{ width: '20rem' }} >
+  </Col>
+  <Col sm> 
+  <Card>
     <Card.Img variant="top" src={BPLogo} />
     <Card.Body>
       <Card.Title>Blue Prism</Card.Title>
       <Card.Text>
-      Pionera, innovadora y popular en el mercado del RPA. Blue Prism ofrece una de las manos de obra digital más exitosa del mundo. 
+      Pioneering, innovative and popular in the RPA market. Blue Prism offers one of the most successful digital workforces in the world.  
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -45,23 +46,23 @@ export const AServiciosCRPA = () => {
     
     </Card.Footer>
   </Card>
+</Col>
   
-  <Card style={{ width: '20rem' }} >
+<Col sm> 
+  <Card>
     <Card.Img variant="top" src={UipathLogo}  />
     <Card.Body>
-
       <Card.Title>UiPath</Card.Title>
       <Card.Text>
-      Diseñada para empresas de todos los tamaños. Permite crear, desplegar y administrar bots desde la web con una facilidad sin precedentes.
+      Designed for companies of all sizes. Allows you to create, deploy and manage bots from the web with unprecedented ease
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-
       <ASSMRPAUi />
-
     </Card.Footer>
   </Card>
-
+  </Col>
+  </Row>
 </CardDeck>
         </div>
     )

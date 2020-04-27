@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tab, Row, Col, Tabs, Container } from "react-bootstrap";
+import { Tab, Row, Col, Tabs } from "react-bootstrap";
 import ListGroup from 'react-bootstrap/ListGroup';
 import AServiciosCRPA from './AServiciosSoluciones/AServiciosCRPA';
 import AServiciosCAppDev from './AServiciosSoluciones/AServiciosCAppDev';
@@ -12,84 +12,59 @@ import AServiciosCCProgramacion from './AServiciosCapacitacion/AServiciosCCProgr
 
 export const AServicios = () => {
     return (
-        <div>
-
-<Container fluid> 
-
-<Tab.Container id="list-group-tabs-example" defaultActiveKey="#soluciones">
-
-  <Row >
-    <Col >
-     <div align="center" >  
+<div>
+<Tab.Container id="list-group-tabs-example" defaultActiveKey="#solutions">
+  <Row className="justify-content-md-center"> 
+  <Col className="justify-content-md-center"> 
       <ListGroup align="center" >
-        <ListGroup.Item action href="#soluciones" >
-          Soluciones
+        <ListGroup.Item action href="#solutions" >
+          Solutions
         </ListGroup.Item>
-        <ListGroup.Item action href="#capacitacion" >
-          Formación
+        <ListGroup.Item action href="#trainings" >
+          Trainings
         </ListGroup.Item>
       </ListGroup>
-      </div>
-    </Col>
-    
-    <Col>
+      </Col> 
+      </Row>
+      <hr></hr>
 
-    <div align="center" >  
 
+  <Row >
       <Tab.Content >
-        
-      <Tab.Pane eventKey="#soluciones">
-            <Tabs defaultActiveKey="RPA" transition={false} id="noanim-tab-example">
+      <Tab.Pane eventKey="#solutions" title="solutions" >
+            <Tabs defaultActiveKey="RPA" id="noanim-tab-example" className="justify-content-md-center">   
             <Tab eventKey="AppDev" title="Apps">
-            
                   <AServiciosCAppDev />
             </Tab>
-
             <Tab eventKey="RPA" title="RPA">
-            <br></br><br></br>
                   <AServiciosCRPA />
             </Tab>
-            
-            <Tab eventKey="Programacion" title="Programación">
-            <br></br><br></br>
+            <Tab eventKey="Programacion" title="Programming">
                   <AServiciosCProgramacion />
             </Tab>
             </Tabs>
         </Tab.Pane>
-
-        <Tab.Pane eventKey="#capacitacion">
+        <Tab.Pane eventKey="#trainings" title="#trainings">
         <Tabs defaultActiveKey="Apps" transition={false} id="noanim-tab-example">
-
             <Tab eventKey="Apps" title="Apps">
-            <br></br><br></br>
               <AServiciosCCAppDev />
             </Tab>
-
             <Tab eventKey="AI" title="AI" >
-            <br></br><br></br>
             <AServiciosCCAI />
-
             </Tab>
             <Tab eventKey="RPA" title="RPA">
-            <br></br><br></br>
             <AServiciosCCRPA/>
             </Tab>
-            <Tab eventKey="Programacion" title="Programación">
-            <br></br><br></br>
+            <Tab eventKey="Programacion" title="Programming">
             <AServiciosCCProgramacion/>
             </Tab>
             </Tabs>
         </Tab.Pane>
       </Tab.Content>
-      </div>
-    </Col>
-
   </Row>
+
 </Tab.Container>
-
-</Container>
-
-        </div>
+</div>
     )
 }
 

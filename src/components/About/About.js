@@ -3,7 +3,7 @@ import TransformacionDigital from './TransformacionDigital'
 import Robotica from './Robotica'
 import AI from './AI'
 
-export const Servicios = () => {
+export const About = () => {
     return (
         <div>
             <div className="row">
@@ -21,4 +21,4 @@ export const Servicios = () => {
     )
 }
 
-export default Servicios;
+export default About;

@@ -21,10 +21,10 @@ function MyVerticallyCenteredModal(props) {
         
           
           <h3 align="center"><img src={ReactLogo} alt="AALogo" ></img></h3>
-          React es la principal forma de construir grandes y rápidas aplicaciones. Potenciando: Airbnb, Uber, Facebook, Netflix, Instagram, Twitter entre otras.
-          </Modal.Body>
+          React is the main way to build big and fast applications. Powering up: Airbnb, Uber, Facebook, Netflix, Instagram, Twitter among others.
+        </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Cerrar</Button>
+          <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
@@ -36,7 +36,7 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button onClick={() => setModalShow(true)} variant="outline-info" className="text-info" >  
-          Ver mas
+          View more
         </Button>
   
         <MyVerticallyCenteredModal

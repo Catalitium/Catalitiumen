@@ -6,11 +6,11 @@ const Robotica = props => {
     return (
         <div className='card-body'>
             <h5 align="center"><img src={BotLogo} alt="Robotics-logo" width={65} height={60} ></img></h5>
-            <h4 align="center" className="card-title"> Robótica
+            <h4 align="center" className="card-title"> Robotics
             <br></br>
             <br></br>
                 <p align="center" className='card-text text-seconday'>
-                Líderes y expertos en el desarrollo, diseño y producción de automatismos 
+                Leaders and experts desgining and developing Automated Solutions
                 </p>
             </h4>
         </div>
